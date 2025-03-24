@@ -3,10 +3,7 @@
     "builds": [
       {
         "src": "Backend/app.py",
-        "use": "@vercel/python",
-        "config": {
-          "maxLambdaSize": "50mb"
-        }
+        "use": "@vercel/python"
       }
     ],
     "routes": [
@@ -14,14 +11,6 @@
         "src": "/api/(.*)",
         "dest": "Backend/app.py"
       }
-    ],
-    "env": {
-      "DB_HOST": "@db_host",
-      "DB_USER": "@db_user",
-      "DB_PASSWORD": "@db_password",
-      "DB_NAME": "@db_name",
-      "DB_PORT": "@db_port"
-    }
+    ]
   }
-  
   
