@@ -8,10 +8,10 @@ function ManifestationForm() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        await axios.post("http://127.0.0.1:5000/manifestacoes", { tipo, descricao });
+        await axios.post("https://adsatividade.vercel.app/manifestacoes", { tipo, descricao });
         alert("Manifestação enviada!");
         setTipo("");
-        setDescricao("");  // Limpar campos após envio
+        setDescricao(""); 
     };
 
     return (
