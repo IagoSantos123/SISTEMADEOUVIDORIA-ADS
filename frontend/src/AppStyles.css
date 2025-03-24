@@ -1,0 +1,122 @@
+/* Fundo azul escuro para um visual mais profissional */
+.app-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #0a1931; /* Azul escuro */
+    color: #ffffff;
+}
+
+/* Estilização do cabeçalho com as logos */
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Reduzindo a altura da logo da Facisa */
+.logo-smaller {
+    height: 80px; /* Ajuste fino na altura */
+    width: auto;  /* Mantém a proporção */
+}
+
+/* Seção de introdução */
+.intro {
+    background: #124076;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.intro h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #f4a261;
+}
+
+.intro p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Título principal */
+.title {
+    color: #f4a261;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Estilização dos cards */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    width: 220px;
+    padding: 25px;
+    background: #1b3a57;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Ícones dos cards */
+.icon {
+    font-size: 50px;
+    color: #f4a261;
+}
+
+p {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Removendo sublinhado do card de repositório */
+.card a {
+    text-decoration: none !important; /* Garante que o sublinhado seja removido */
+    color: inherit !important; /* Garante que a cor do texto seja a mesma dos outros cards */
+}
+
+.card a:hover {
+    text-decoration: none !important; /* Garante que o hover não adicione sublinhado */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+}
